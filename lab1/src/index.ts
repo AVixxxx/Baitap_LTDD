@@ -29,12 +29,12 @@ import { User } from "./bai7";
 import { Product } from "./bai8";
 
 //bai 1
-var person = new Person("Khoa", 21);
+var person = new Person("Phuoc", 21);
 
 console.log(person);
 
 //bai2
-var student = new Student("TKhoa", 21, 12);
+var student = new Student("HPhuoc", 21, 12);
 
 student.displayInfor();
 
@@ -59,13 +59,13 @@ account.withdraw(100)
 console.log("Tien con lai sau khi rut: " + account.balance);
 
 //bai6
-var book = new Book("Ha do", "Nguyen Nhat Anh", 8);
+var book = new Book("Mua mau", "Nguyen Nhat ", 8);
 
 
 //bai7
-var user = new User("Khoa");
+var user = new User("Phuoc");
 console.log(user.getter());
-user.setter("TKhoa");
+user.setter("Phuoc");
 console.log(user.getter());
 
 
@@ -127,7 +127,7 @@ var numberValue = new Box<number>(123);
 console.log(numberValue.getValue());
 
 type emp = {name: String, age: number}
-var objValue = new Box<emp>({name: "Khoa",age: 21});
+var objValue = new Box<emp>({name: "Phuoc",age: 21});
 console.log(objValue.getValue());
 
 //bai 17
@@ -167,7 +167,7 @@ console.log(numberRepo.getAll());
 
 var userRepo = new Repository<Person>();
 userRepo.add(new Person("Jiikay", 21));
-userRepo.add(new Person("Khoa", 12));
+userRepo.add(new Person("Phuoc", 12));
 console.log(userRepo.getAll());
 
 //bai 22

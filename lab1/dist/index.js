@@ -30,10 +30,10 @@ const bai6_1 = require("./bai6");
 const bai7_1 = require("./bai7");
 const bai8_1 = require("./bai8");
 //bai 1
-var person = new bai1_1.Person("Khoa", 21);
+var person = new bai1_1.Person("Phuoc", 21);
 console.log(person);
 //bai2
-var student = new bai2_1.Student("TKhoa", 21, 12);
+var student = new bai2_1.Student("HPhuoc", 21, 12);
 student.displayInfor();
 //bai3
 var car = new bai3_1.Car("Ford", "new version", 3);
@@ -50,11 +50,11 @@ console.log("Tien con lai sau khi nap: " + account.balance);
 account.withdraw(100);
 console.log("Tien con lai sau khi rut: " + account.balance);
 //bai6
-var book = new bai6_1.Book("Ha do", "Nguyen Nhat Anh", 8);
+var book = new bai6_1.Book("Mua mau", "Nguyen Nhat ", 8);
 //bai7
-var user = new bai7_1.User("Khoa");
+var user = new bai7_1.User("Phuoc");
 console.log(user.getter());
-user.setter("TKhoa");
+user.setter("Phuoc");
 console.log(user.getter());
 //bai8
 var product1 = new bai8_1.Product("Ao", 101);
@@ -102,7 +102,7 @@ library.showInfor();
 //Bai 16
 var numberValue = new bai16_1.Box(123);
 console.log(numberValue.getValue());
-var objValue = new bai16_1.Box({ name: "Khoa", age: 21 });
+var objValue = new bai16_1.Box({ name: "Phuoc", age: 21 });
 console.log(objValue.getValue());
 //bai 17
 const logger1 = bai17_1.Logger.getInstance();
@@ -133,7 +133,7 @@ numberRepo.add(21);
 console.log(numberRepo.getAll());
 var userRepo = new bai21_1.Repository();
 userRepo.add(new bai1_1.Person("Jiikay", 21));
-userRepo.add(new bai1_1.Person("Khoa", 12));
+userRepo.add(new bai1_1.Person("Phuoc", 12));
 console.log(userRepo.getAll());
 //bai 22
 var stack = new bai22_1.Stack();
